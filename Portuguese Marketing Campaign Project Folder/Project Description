@@ -1,0 +1,24 @@
+You are to apply the following techniques to mine this data set:
+
+Association Rules
+Decision Tree Classification
+Naive Bayes Classification
+kmeans and dbscan clustering
+Also, you are to use Principle Component Analysis to reduce the number of attributes (aka features).  
+
+Please answer the following questions:
+
+What can you deduce from the data set?   (in other words, what attribute values are indicative of "success")
+Which mining techniques yielded the best results for what? How do you define "best results"? Please included tables and/or graphs to justify your statements about which are best.
+How useful was Principle Component Analysis?   For what number of components did you get the "best results".  Please include tables and/or graphs to justify your statement.
+ 
+
+The data set on Kaggle has many things that are not conducive to using the sklearn library: strings and negative values.  To make the data cleaning part of this easier I am supplying a file that reads the data set into a data frame and then transforms the data using categorical mapping for the strings and normalization.  Feel free to use this file as a starting point:
+
+startingPointAssignment3.py Download startingPointAssignment3.py
+
+Note, this code assumes the data set is name "input.csv".
+
+ 
+
+Note - while numeric data is desired for classification/clustering, you need strings that look like market basket data (sets of item names) for Association Rules.   Numeric data can be grouped into names like:   "lowValue, midValue, mediumHighValue, highValue" etc.  See the following code for a possible way of doing this (not necessarily the best):
